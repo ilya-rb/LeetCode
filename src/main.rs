@@ -1,7 +1,7 @@
 mod plus_one;
+mod rotate_array;
+mod remove_duplicates;
+mod contains_duplicate;
+mod single_number;
 
-fn main() {
-    let input = vec![1, 2, 3 ,4];
-
-    println!("{:?}", plus_one::plus_one(input));
-}
+fn main() {}
