@@ -5,9 +5,6 @@ mod rotate_array;
 mod remove_duplicates;
 mod contains_duplicate;
 mod move_zeroes;
+mod two_sum;
 
-fn main() {
-    let mut input = vec![0, 1, 0, 3, 12];
-    move_zeroes::move_zeroes(&mut input);
-    println!("{:?}", input);
-}
+fn main() {}
