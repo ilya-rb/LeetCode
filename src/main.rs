@@ -5,6 +5,5 @@ mod rotate_array;
 mod remove_duplicates;
 mod contains_duplicate;
 mod move_zeroes;
-mod two_sum;
 
 fn main() {}
