@@ -18,6 +18,10 @@ impl TreeNode {
         }
     }
 
+    pub fn wrap_with_ref_cell(self) -> Rc<RefCell<Self>> {
+        Rc::new(RefCell::new(self))
+    }
+
     pub fn inorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
         let mut result: Vec<i32> = Vec::new();
         TreeNode::inorder_traversal_internal(root, &mut result);
@@ -51,28 +55,19 @@ mod tests {
     }
 
     fn create_test_tree() -> Option<Rc<RefCell<TreeNode>>> {
-        let third = TreeNode {
-            val: 3,
-            left: Option::None,
-            right: Option::None,
-        };
-
+        let third = TreeNode::new(3).wrap_with_ref_cell();
         let second = TreeNode {
             val: 2,
             right: Option::None,
-            left: Some(Rc::new(RefCell::new(third))),
-        };
+            left: Some(third),
+        }.wrap_with_ref_cell();
 
         Some(
-            Rc::new(
-                RefCell::new(
-                    TreeNode {
-                        val: 1,
-                        left: Option::None,
-                        right: Some(Rc::new(RefCell::new(second))),
-                    }
-                )
-            )
+            TreeNode {
+                val: 1,
+                left: Option::None,
+                right: Some(second),
+            }.wrap_with_ref_cell()
         )
     }
 }

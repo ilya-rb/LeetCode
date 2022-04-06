@@ -9,5 +9,4 @@ mod two_sum;
 mod binary_tree_inorder;
 
 fn main() {
-    binary_tree_inorder::test();
 }
