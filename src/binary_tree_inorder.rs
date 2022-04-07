@@ -31,8 +31,11 @@ impl TreeNode {
     fn inorder_traversal_internal(root: Option<Rc<RefCell<TreeNode>>>, result: &mut Vec<i32>) {
         if let Some(node) = root {
             let node = node.borrow();
+
             TreeNode::inorder_traversal_internal(node.left.clone(), result);
+
             result.push(node.val);
+
             TreeNode::inorder_traversal_internal(node.right.clone(), result);
         }
     }
