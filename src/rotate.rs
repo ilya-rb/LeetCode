@@ -10,6 +10,7 @@
 ///     [4,5,6],
 ///     [7,8,9]
 /// ]
+///
 /// Output: [
 ///     [7,4,1],
 ///     [8,5,2],
@@ -29,7 +30,6 @@ pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
     // Reverse each row
     for i in 0..size {
         matrix[i].reverse();
-
     }
 }
 
