@@ -10,5 +10,6 @@ mod binary_tree_inorder;
 mod roman_to_integer;
 mod max_profit;
 mod intersect;
+mod is_valid_sudoku;
 
 fn main() {}
