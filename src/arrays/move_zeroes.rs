@@ -29,7 +29,7 @@ pub fn move_zeroes(nums: &mut Vec<i32>) {
 
 #[cfg(test)]
 mod tests {
-    use crate::move_zeroes::move_zeroes;
+    use super::move_zeroes;
     use rstest::rstest;
 
     #[rstest(actual, expected,

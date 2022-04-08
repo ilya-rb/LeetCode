@@ -66,7 +66,7 @@ pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use crate::is_valid_sudoku::is_valid_sudoku;
+    use super::is_valid_sudoku;
     use rstest::rstest;
 
     #[rstest(board, expected, case(

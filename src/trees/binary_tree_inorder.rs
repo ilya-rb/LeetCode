@@ -43,7 +43,7 @@ impl TreeNode {
 
 #[cfg(test)]
 mod tests {
-    use crate::binary_tree_inorder::TreeNode;
+    use super::TreeNode;
     use std::cell::RefCell;
     use std::rc::Rc;
     use rstest::rstest;

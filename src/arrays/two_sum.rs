@@ -31,12 +31,12 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 
 #[cfg(test)]
 mod tests {
-    use crate::two_sum::two_sum;
+    use super::two_sum;
     use rstest::rstest;
 
     #[rstest(nums, target, expected,
     case(vec ! [0, 1, 2, 3, 4, 7, 11, 15], 6, vec ! [4, 2]),
-    case(vec ! [3, -5, 8, 44, 100, 4, 0], 11, vec ! [2, 0]),
+    case(vec ! [3, - 5, 8, 44, 100, 4, 0], 11, vec ! [2, 0]),
     case(vec ! [3, 2, 4], 6, vec ! [2, 1]),
     )]
     fn test_two_sum(nums: Vec<i32>, target: i32, expected: Vec<i32>) {

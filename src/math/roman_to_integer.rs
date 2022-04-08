@@ -65,7 +65,7 @@ pub fn roman_to_integer(s: String) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::roman_to_integer::roman_to_integer;
+    use super::roman_to_integer;
     use rstest::rstest;
 
     #[rstest(input, expected,

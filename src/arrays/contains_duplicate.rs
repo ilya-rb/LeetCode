@@ -22,7 +22,7 @@ pub fn contains_duplicate(nums: Vec<i32>) -> bool {
 #[cfg(test)]
 mod tests {
     use rstest::rstest;
-    use crate::contains_duplicate::contains_duplicate;
+    use super::contains_duplicate;
 
     #[rstest(input, expected,
     case(vec ! [1, 2, 3, 1], true),

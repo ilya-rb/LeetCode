@@ -24,7 +24,7 @@ pub fn rotate(nums: &mut Vec<i32>, k: i32) {
 #[cfg(test)]
 mod tests {
     use rstest::rstest;
-    use crate::rotate_array::rotate;
+    use super::rotate;
 
     #[rstest(nums, k, expected,
     case(vec ! [1, 2, 3, 4, 5, 6, 7], 3, vec ! [5, 6, 7, 1, 2, 3, 4]),

@@ -31,7 +31,7 @@ pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
 
 #[cfg(test)]
 mod tests {
-    use crate::plus_one::plus_one;
+    use super::plus_one;
     use rstest::rstest;
 
     #[rstest(input, expected,

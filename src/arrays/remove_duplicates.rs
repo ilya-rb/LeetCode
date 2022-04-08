@@ -26,7 +26,7 @@ pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
 #[cfg(test)]
 mod tests {
     use rstest::rstest;
-    use crate::remove_duplicates::remove_duplicates;
+    use super::remove_duplicates;
 
     #[rstest(nums, expected,
     case(vec ! [1, 1, 2], 2),

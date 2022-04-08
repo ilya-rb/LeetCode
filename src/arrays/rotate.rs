@@ -58,7 +58,7 @@ fn swap(i: (usize, usize), j: (usize, usize), matrix: &mut Vec<Vec<i32>>) {
 
 #[cfg(test)]
 mod tests {
-    use crate::rotate::{rotate, rotate_cloned};
+    use super::{rotate, rotate_cloned};
     use rstest::rstest;
 
     #[rstest(input, expected,

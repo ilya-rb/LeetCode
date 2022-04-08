@@ -61,7 +61,7 @@ pub fn max_profit(prices: Vec<i32>) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::max_profit::max_profit;
+    use super::max_profit;
     use rstest::rstest;
 
     #[rstest(prices, expected_profit,
