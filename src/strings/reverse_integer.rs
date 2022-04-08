@@ -10,7 +10,7 @@ pub fn reverse_integer(x: i32) -> i32 {
     let mut result = 0i32;
     let mut x = x.abs();
 
-    while x > 0 {
+    while x != 0 {
         let next = x % 10;
         let next_scale = result.checked_mul(10);
         if next_scale.is_none() {
