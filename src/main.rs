@@ -11,5 +11,6 @@ mod roman_to_integer;
 mod max_profit;
 mod intersect;
 mod is_valid_sudoku;
+mod rotate;
 
 fn main() {}
