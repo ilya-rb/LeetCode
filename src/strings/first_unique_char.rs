@@ -14,7 +14,7 @@
 /// Output: -1
 ///
 
-// Leetcode - runtime 39-43ms (0ms if use u8 array instead of hash map)
+// Leetcode - runtime 39-43ms (0ms using u8 array instead of hash map)
 pub fn first_unique_char(s: String) -> i32 {
     use std::collections::HashMap;
 
